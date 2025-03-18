@@ -1,5 +1,6 @@
 package expense_income.income;
 
+import expense_income.income.commands.HelpCommand;
 import expense_income.income.commands.AddCommand;
 import expense_income.income.commands.DeleteCommand;
 import expense_income.income.commands.IncomeCommand;
@@ -43,6 +44,8 @@ public class IncomeCommandParser {
                 System.out.println("Invalid index. Please enter a number.");
                 return null;
             }
+        case "help":
+            return new HelpCommand();
 
         default:
             return null;
