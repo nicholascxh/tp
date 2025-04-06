@@ -1,8 +1,15 @@
 package expenseincome.expense.commands;
 
 import expenseincome.expense.ExpenseManager;
-
+/**
+ * Represents the help command in expense mode.
+ */
 public class HelpExpenseCommand extends ExpenseCommand {
+    /**
+     * Executes the help command.
+     *
+     * @param manager the ExpenseManager instance (not used)
+     */
     @Override
     public void execute(ExpenseManager manager) {
         System.out.println("Expense Command Help:");
